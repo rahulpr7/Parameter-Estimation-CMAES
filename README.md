@@ -42,11 +42,12 @@ The optimization is performed in two stages:
 
 ## 📊 Results Summary
 
-| Optimizer | Iterations | Final Loss | Optimization Time (s) |
-|------------|-------------|-------------|------------------------|
-| CMA-ES     | 100         | 0.000263    | 1.23                  |
-| L-BFGS     | 200         | 0.000256    | 0.11                  |
-| **Total**  | **300**     | **0.000256** | **1.34**              |
+| Optimizer| Iterations | Final Loss   | Time (s) | Estimated Parameters      |
+| -------- | ---------- | ------------ | ---------| ------------------------- |
+| CMA-ES   | 100        | 0.000263     | 1.23     | 30.0002, 0.030000, 55.0021    |
+| L-BFGS   | 200        | 0.000256     | 0.11     | 29.9996, 0.02999, 55.0012     |
+| **Total**| **300**    | **0.000256** | **1.34** | **[29.99, 0.03, 55.00]** |
+
 
 > The hybrid approach achieved 32-bit precision on optimized parameters with a mean ℓ₁ loss of `0.000256`, confirming a high-fidelity fit to the dataset.
 
